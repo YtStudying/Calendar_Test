@@ -27,9 +27,10 @@
         </ImageButton>
 
         <TextView
-            android:layout_width="162dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="3"
+            android:layout_marginTop="4dp"
             android:gravity="center"
             android:text="CurrentDate"
             android:id="@+id/current_Date"

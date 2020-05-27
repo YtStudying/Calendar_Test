@@ -34,6 +34,7 @@ public class CustomCalendarView extends LinearLayout {
     List<Events> eventslist = new ArrayList<>();
 
     public CustomCalendarView(Context context) {
+
         super(context);
     }
 
