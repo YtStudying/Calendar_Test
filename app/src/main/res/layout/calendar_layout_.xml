@@ -3,14 +3,15 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/activity_custom_calndar">
+    android:id="@+id/activity_custom_calendar">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:background="@android:color/holo_orange_dark">
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:background="#000">
+
         <ImageButton
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -18,11 +19,12 @@
             android:background="@mipmap/previous"
             android:layout_margin="10dp"
             />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="20dp"
             android:text="CurrentDate"
             android:id="@+id/current_Date"
             android:textColor="@android:color/white"
@@ -45,14 +47,14 @@
         android:orientation="horizontal"
         android:paddingTop="4dp"
         android:paddingBottom="4dp"
-        android:background="@color/colorPrimaryDark">
+        android:background="#000">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Sun"
-            android:background="@android:color/holo_blue_dark"
+            android:background="#ff0000"
             android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold"
@@ -62,7 +64,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Mon"
-            android:background="@android:color/holo_green_light"
+            android:background="#ffa500"
             android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold"
@@ -72,7 +74,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Tue"
-            android:background="@android:color/holo_red_light"
+            android:background="#ffff00"
             android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold"
@@ -82,7 +84,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Wed"
-            android:background="@android:color/holo_purple"
+            android:background="#008000"
             android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold"
@@ -92,7 +94,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Thu"
-            android:background="@android:color/holo_blue_dark"
+            android:background="#0000ff"
             android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold"
@@ -102,7 +104,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Fri"
-            android:background="@android:color/white"
+            android:background="#4b0082"
             android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold"
@@ -112,7 +114,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Sat"
-            android:background="@android:color/darker_gray"
+            android:background="#ee82ee"
             android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold"
@@ -121,9 +123,9 @@
     </LinearLayout>
 
     <GridView
+        android:id="@+id/gridview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/gridview"
         android:numColumns="7"></GridView>
 
 </LinearLayout>

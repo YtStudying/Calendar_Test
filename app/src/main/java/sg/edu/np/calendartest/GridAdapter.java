@@ -54,12 +54,12 @@ public class GridAdapter extends ArrayAdapter {
         }
 
         if(displayMonth == currentMonth && displayYear == currentYear){
-            view.setBackgroundColor(getContext().getResources().getColor(R.color.green));
+            view.setBackgroundColor(getContext().getResources().getColor(R.color.purple));
 
         }
         else
         {
-            view.setBackgroundColor(Color.parseColor("#cccccc"));
+            view.setBackgroundColor(Color.parseColor("#ee9b43"));
         }
 
         TextView Day_Number = view.findViewById(R.id.calendar_day);
