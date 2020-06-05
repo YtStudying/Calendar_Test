@@ -53,6 +53,7 @@ public class GridAdapter extends ArrayAdapter {
 
         }
 
+        //Setting the colour of Current Selected Month and Setting Rest of the Months to another colour
         if(displayMonth == currentMonth && displayYear == currentYear){
             view.setBackgroundColor(getContext().getResources().getColor(R.color.purple));
 
