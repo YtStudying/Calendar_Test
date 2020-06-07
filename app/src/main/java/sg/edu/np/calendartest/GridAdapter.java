@@ -63,6 +63,7 @@ public class GridAdapter extends ArrayAdapter {
             view.setBackgroundColor(Color.parseColor("#ee9b43"));
         }
 
+        //Setting the indication of number of events below the date shown in the calendar in the grid view
         TextView Day_Number = view.findViewById(R.id.calendar_day);
         TextView EventNumber = view.findViewById(R.id.events_id);
         Day_Number.setText(String.valueOf(DayNo));
@@ -81,6 +82,7 @@ public class GridAdapter extends ArrayAdapter {
         return view;
     }
 
+    //Displaying String Date from database as Date Formatted when shown on the Event Recycle View on Long Press of Date
     private Date ConvertStringToDate(String eventDate){
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
         Date date = null;
