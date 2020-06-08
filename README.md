@@ -28,13 +28,17 @@ Future Plan/Upgrades:
 8) Birthday Reminders (Sync Contact)
 
 Screenshots of Application:
-1) Login Page
+1) Login Page <br>
+![Login Page](MAD/Login.png)
 
-2) Registeration Page
+2) Registration Page <br>
+![Registration Page](MAD/Registration.png)
 
-3) Home Page/Main Page
+3) Home Page/Main Page <br>
+![Main/Home Page](MAD/Main_Home.png)
 
-4) Adding Event
+4) Adding Event <br>
+![Adding of Event](MAD/Adding_Event.png)
 
-5) Viewing/Deleting Event
-
+5) Viewing/Deleting Event <br>
+![Viewing/Deleting of Event](MAD/Viewing_Deleting.png)
