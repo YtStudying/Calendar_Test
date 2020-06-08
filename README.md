@@ -6,7 +6,7 @@ Group/Team: 5
 
 Team Members:
 1) Lee Yoon Teng (S10198259D)
-2) Anderson Loke Hou Ming ()
+2) Anderson Loke Hou Ming (S10195290H)
 3) James Yu Ren Xiang (S10195788B)
 
 Introduction to the Application:
