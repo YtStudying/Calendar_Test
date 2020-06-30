@@ -9,12 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CalendarActivity"></activity>
-        <activity android:name=".Register" />
-        <activity android:name=".CustomCalendarView" />
-        <activity android:name=".DBOpenHelper" />
-        <activity android:name=".DBStructure" />
-        <activity android:name=".Events" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CalendarActivity"></activity>
+        <activity android:name=".Register"></activity>
+        <receiver android:name=".AlarmReceiver"
+            android:exported="true"
+            android:enabled="true">
+
+        </receiver>
     </application>
 
 </manifest>

@@ -13,9 +13,10 @@ public class DBOpenHelper extends SQLiteOpenHelper {
     private static final String CREATE_EVENTS_TABLE = "create table " + DBStructure.DB_EVENT_TABLE_NAME
             + "(ID INTEGER PRIMARY KEY AUTOINCREMENT, " +DBStructure.DB_EVENT+" TEXT, "
             + DBStructure.DB_TIME+" TEXT, " + DBStructure.DB_DATE+" TEXT, "
-            + DBStructure.DB_MONTH+" TEXT, " + DBStructure.DB_YEAR+" TEXT)";
+            + DBStructure.DB_MONTH+" TEXT, " + DBStructure.DB_YEAR+" TEXT,"
+            + DBStructure.DB_NOTIFY+" TEXT)";
 
-    private static final String  DROP_EVENTS_TABLE= "DROP TABLE IF EXISTS " + DBStructure.DB_EVENT_TABLE_NAME;
+    private static final String DROP_EVENTS_TABLE= "DROP TABLE IF EXISTS " + DBStructure.DB_EVENT_TABLE_NAME;
 
     public DBOpenHelper(@Nullable Context context) {
         super(context, DBStructure.DB_NAME, null, DBStructure.DB_VERSION);
@@ -34,13 +35,14 @@ public class DBOpenHelper extends SQLiteOpenHelper {
 
     }
 
-    public void SaveEvent(String event,String time,String date,String month,String year,SQLiteDatabase database){
+    public void SaveEvent(String event,String time,String date,String month,String year,String notify, SQLiteDatabase database){
         ContentValues contentValues = new ContentValues();
         contentValues.put(DBStructure.DB_EVENT,event);
         contentValues.put(DBStructure.DB_TIME,time);
         contentValues.put(DBStructure.DB_DATE,date);
         contentValues.put(DBStructure.DB_MONTH,month);
         contentValues.put(DBStructure.DB_YEAR,year);
+        contentValues.put(DBStructure.DB_NOTIFY,notify);
         database.insert(DBStructure.DB_EVENT_TABLE_NAME,null,contentValues);
 
     }
@@ -60,10 +62,26 @@ public class DBOpenHelper extends SQLiteOpenHelper {
         return database.query(DBStructure.DB_EVENT_TABLE_NAME,Projections,Selection,SelectionArgs,null,null,null);
     }
 
+    public Cursor ReadIDEvents(String date,String event, String time,SQLiteDatabase database){
+        String [] Projections = {DBStructure.DB_ID,DBStructure.DB_NOTIFY,DBStructure.DB_TIME};
+        String Selection = DBStructure.DB_DATE +"=? and "+DBStructure.DB_EVENT+"=? and "+DBStructure.DB_TIME+"=?";
+        String [] SelectionArgs = {date,event,time};
+
+        return database.query(DBStructure.DB_EVENT_TABLE_NAME,Projections,Selection,SelectionArgs,null,null,null);
+    }
+
     public void deleteEvent(String event, String date, String time, SQLiteDatabase database){
         String Selection = DBStructure.DB_EVENT +"=? and "+DBStructure.DB_DATE+"=? and "+DBStructure.DB_TIME+"=?";
         String [] SelectionArgs = {event, date, time};
         database.delete(DBStructure.DB_EVENT_TABLE_NAME, Selection, SelectionArgs);
+    }
+
+    public void updateEvent(String date,String event, String time,String notify,SQLiteDatabase database){
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(DBStructure.DB_NOTIFY,notify);
+        String Selection = DBStructure.DB_DATE +"=? and "+DBStructure.DB_EVENT+"=? and "+DBStructure.DB_TIME+"=?";
+        String [] SelectionArgs = {date,event,time};
+        database.update(DBStructure.DB_EVENT_TABLE_NAME,contentValues,Selection,SelectionArgs);
     }
 
 }
