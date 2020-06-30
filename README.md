@@ -6,7 +6,7 @@ Group/Team: 5
 
 Team Members:
 1) Lee Yoon Teng (S10198259D)
-2) Anderson Loke Hou Ming ()
+2) Anderson Loke Hou Ming (S10195290H)
 3) James Yu Ren Xiang (S10195788B)
 
 Introduction to the Application:
@@ -42,3 +42,11 @@ Screenshots of Application:
 
 5) Viewing/Deleting Event <br>
 ![Viewing/Deleting of Event](MAD/Viewing_Deleting.png)
+
+Screenshots of Other Designs for Calender:
+
+1) Calendar Test 2 <br>
+![Test 2](MAD/Test2.png)
+
+2) Calendar Test 5 <br>
+![Test 5](MAD/Test5.png)
