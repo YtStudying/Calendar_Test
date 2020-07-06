@@ -24,10 +24,10 @@ public class AlarmReceiver extends BroadcastReceiver {
 
         String channelId = "channel_id";
         CharSequence name = "channel_name";
-        String descruption ="description";
+        String description ="description";
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             NotificationChannel channel = new NotificationChannel(channelId,name, NotificationManager.IMPORTANCE_HIGH);
-            channel.setDescription(descruption);
+            channel.setDescription(description);
             NotificationManager notificationManager = context.getSystemService(NotificationManager.class);
             notificationManager.createNotificationChannel(channel);
         }
