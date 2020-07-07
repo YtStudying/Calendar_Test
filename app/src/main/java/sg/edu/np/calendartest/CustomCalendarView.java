@@ -180,7 +180,6 @@ public class CustomCalendarView extends LinearLayout {
                 RecyclerView recyclerView = showView.findViewById(R.id.EventsRV);
                 RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(showView.getContext());
                 recyclerView .setLayoutManager(layoutManager);
-                recyclerView.setHasFixedSize(true);
                 EventRecyclerAdapter eventRecyclerAdapter = new EventRecyclerAdapter(showView.getContext()
                         ,CollectEventByDate(date));
                 recyclerView.setAdapter(eventRecyclerAdapter);
