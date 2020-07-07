@@ -162,11 +162,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
         Cursor cursor = dbOpenHelper.ReadIDEvents(date,event,time,database);
         while (cursor.moveToNext()){
             String notify = cursor.getString(cursor.getColumnIndex(DBStructure.DB_NOTIFY));
-            if (notify.equals("on")){
-                alarmed = true;
-            }else {
-                alarmed = false;
-            }
+            alarmed = notify.equals("on");
         }
         cursor.close();
         dbOpenHelper.close();

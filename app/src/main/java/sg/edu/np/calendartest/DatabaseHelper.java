@@ -37,7 +37,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         contentValues.put("username", user);
         contentValues.put("password", password);
         long res = db.insert("registerUser", null, contentValues);
-        db.close();;
+        db.close();
         return res;
     }
 
@@ -51,9 +51,6 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         cursor.close();
         db.close();
 
-        if(count>0)
-          return true;
-        else
-            return false;
+        return count > 0;
     }
 }

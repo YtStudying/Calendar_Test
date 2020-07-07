@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -55,7 +56,7 @@ public class GridAdapter extends ArrayAdapter {
 
         //Setting the colour of Current Selected Month and Setting Rest of the Months to another colour
         if(displayMonth == currentMonth && displayYear == currentYear){
-            view.setBackgroundColor(getContext().getResources().getColor(R.color.purple));
+            view.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.purple));
 
         }
         else

@@ -34,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.login);
 
         db = new DatabaseHelper(this);
-        bt_view = (ToggleButton)findViewById(R.id.btn_view);
-        emailId = (EditText)findViewById(R.id.username);
-        password = (EditText)findViewById(R.id.password);
-        bt_login = (Button)findViewById(R.id.btn_login);
-        noAcc = (TextView)findViewById(R.id.noAcc);
+        bt_view = findViewById(R.id.btn_view);
+        emailId = findViewById(R.id.username);
+        password = findViewById(R.id.password);
+        bt_login = findViewById(R.id.btn_login);
+        noAcc = findViewById(R.id.noAcc);
 
         bt_view.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -75,6 +75,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        customCalendarView = (CustomCalendarView) findViewById(R.id.custom_calendar_view);
+        customCalendarView = findViewById(R.id.custom_calendar_view);
     }
 }

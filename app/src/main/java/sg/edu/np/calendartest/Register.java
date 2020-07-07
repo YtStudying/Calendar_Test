@@ -23,11 +23,11 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.login_create);
 
         db = new DatabaseHelper(this);
-        emailId_sign = (EditText)findViewById(R.id.username_sign);
-        password_sign = (EditText)findViewById(R.id.password_sign);
-        cfmPassword_sign = (EditText)findViewById(R.id.cfmPassword_sign);
-        signUp = (Button)findViewById(R.id.btn_signUp);
-        haveAcc = (TextView)findViewById(R.id.haveAcc);
+        emailId_sign = findViewById(R.id.username_sign);
+        password_sign = findViewById(R.id.password_sign);
+        cfmPassword_sign = findViewById(R.id.cfmPassword_sign);
+        signUp = findViewById(R.id.btn_signUp);
+        haveAcc = findViewById(R.id.haveAcc);
         haveAcc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
