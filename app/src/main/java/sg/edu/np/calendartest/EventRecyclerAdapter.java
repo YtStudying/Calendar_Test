@@ -29,8 +29,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
     ArrayList<Events> arrayList ;
     DBOpenHelper dbOpenHelper;
 
-
-
+    //Initializing the RecyclerView for Events
     public EventRecyclerAdapter(Context context, ArrayList<Events> arrayList) {
         this.context = context;
         this.arrayList = arrayList;
@@ -60,6 +59,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
             }
         });
 
+        //Setting alarm notification on/off icon based on user input
         if (isAlarmed(events.getDATE(),events.getEVENT(),events.getTIME())){
             holder.setAlarm.setImageResource(R.drawable.ic_action_notification_on);
 
@@ -80,6 +80,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
         holder.setAlarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Alarm settings during event creation (alarm checkbox on/off)
                 if (isAlarmed(events.getDATE(),events.getEVENT(),events.getTIME())){
                     holder.setAlarm.setImageResource(R.drawable.ic_action_notification_off);
                     cancelAlarm(getRequestCode(events.getDATE(),events.getEVENT(),events.getTIME()));
@@ -155,6 +156,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
 
     }
 
+    //Setting the Notify column value to on/off into the database
     private boolean isAlarmed(String date,String event,String time){
         boolean alarmed = false;
         dbOpenHelper = new DBOpenHelper(context);
@@ -169,6 +171,7 @@ public class EventRecyclerAdapter extends RecyclerView.Adapter<EventRecyclerAdap
         return alarmed;
     }
 
+    //Sending the Alarm data into the database
     private void setAlarm(Calendar calendar, String event, String time, int RequestCOde){
         Intent intent = new Intent(context.getApplicationContext(),AlarmReceiver.class);
         intent.putExtra("event",event);
