@@ -61,7 +61,7 @@ public class GridAdapter extends ArrayAdapter {
         }
         else
         {
-            view.setBackgroundColor(Color.parseColor("#ee9b43"));
+            view.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.colorPrimary));
         }
 
         //Setting the indication of number of events below the date shown in the calendar in the grid view

@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Intent successLogin = new Intent(MainActivity.this, CalendarActivity.class);
                     startActivity(successLogin);
+                    finish();
                 }
                 else {
                     Toast.makeText(MainActivity.this,"Login Error",Toast.LENGTH_SHORT).show();

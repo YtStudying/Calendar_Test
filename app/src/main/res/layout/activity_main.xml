@@ -9,9 +9,7 @@
     <sg.edu.np.calendartest.CustomCalendarView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/custom_calendar_view"
-        >
-
+        android:id="@+id/custom_calendar_view">
     </sg.edu.np.calendartest.CustomCalendarView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

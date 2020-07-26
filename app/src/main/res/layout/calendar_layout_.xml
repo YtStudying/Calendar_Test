@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_login"
+    android:background="@color/dark_blue"
     android:id="@+id/activity_custom_calendar">
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,7 +11,7 @@
         android:orientation="horizontal"
         android:paddingTop="4dp"
         android:paddingBottom="4dp"
-        android:background="#000">
+        android:background="@color/dark_blue">
 
         <ImageButton
             android:layout_width="40dp"
@@ -28,7 +28,7 @@
             android:layout_marginTop="20dp"
             android:text="CurrentDate"
             android:id="@+id/current_Date"
-            android:textColor="@android:color/white"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="18sp"
             android:layout_weight="3"/>
@@ -46,80 +46,119 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingTop="4dp"
-        android:paddingBottom="4dp"
-        android:background="#000">
+        android:background="@color/dark_blue">
 
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Sun"
             android:background="#ff0000"
-            android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold"
             />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Mon"
             android:background="#ffa500"
-            android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold"
             />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Tue"
             android:background="#ffff00"
-            android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold"
             />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Wed"
             android:background="#008000"
-            android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold"
             />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Thu"
             android:background="#0000ff"
-            android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold"
             />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Fri"
             android:background="#4b0082"
-            android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold"
             />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Sat"
             android:background="#ee82ee"
-            android:layout_marginTop="4dp"
             android:layout_weight="1"
             android:textStyle="bold"
             />
+        </LinearLayout>
 
     </LinearLayout>
 

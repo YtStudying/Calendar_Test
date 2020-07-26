@@ -48,6 +48,7 @@ public class Register extends AppCompatActivity {
                         Toast.makeText(Register.this,"You have registered",Toast.LENGTH_SHORT).show();
                         Intent moveToLogin = new Intent (Register.this,MainActivity.class);
                         startActivity(moveToLogin);
+                        finish();
                     }
                 }
 
