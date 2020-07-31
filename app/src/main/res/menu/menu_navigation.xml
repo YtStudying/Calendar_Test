@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Calender"
+        android:title="Calender"
+        android:icon="@drawable/ic_calendar"/>
+
+    <item
+        android:id="@+id/Notes"
+        android:title="Notes"
+        android:icon="@drawable/ic_note"/>
+
+    <item
+        android:id="@+id/Pin"
+        android:title="Pin"
+        android:icon="@drawable/ic_pin"/>
+
+    <item
+        android:id="@+id/Settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings"/>
+
+</menu>

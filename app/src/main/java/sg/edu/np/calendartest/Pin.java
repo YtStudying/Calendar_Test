@@ -9,26 +9,26 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class CalendarActivity extends AppCompatActivity {
+public class Pin extends AppCompatActivity {
 
-    CustomCalendarView customCalendarView;
     BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_pin);
 
-        customCalendarView = findViewById(R.id.custom_calendar_view);
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        bottomNavigationView.setSelectedItemId(R.id.Calender);
+        bottomNavigationView.setSelectedItemId(R.id.Pin);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.Calender:
+                        startActivity(new Intent(getApplicationContext(),CalendarActivity.class));
+                        overridePendingTransition(0,0);
                         return true;
 
                     case R.id.Notes:
@@ -37,8 +37,6 @@ public class CalendarActivity extends AppCompatActivity {
                         return true;
 
                     case R.id.Pin:
-                        startActivity(new Intent(getApplicationContext(),Pin.class));
-                        overridePendingTransition(0,0);
                         return true;
 
                     case R.id.Settings:
