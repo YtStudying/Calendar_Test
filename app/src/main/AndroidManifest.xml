@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AboutUs"></activity>
+        <activity android:name=".PreferencesSettings"></activity>
+        <activity android:name=".MainFragment" />
+        <activity android:name=".AboutUs" />
         <activity android:name=".HowToUse" />
         <activity android:name=".Info" />
         <activity android:name=".Pin" />
@@ -22,12 +24,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".CalendarActivity" />
-        <activity android:name=".note_activity"/>
-        <activity android:name=".AddNote"/>
-        <activity android:name=".Detail"/>
-        <activity android:name=".Edit"/>
+        <activity android:name=".note_activity" />
+        <activity android:name=".AddNote" />
+        <activity android:name=".Detail" />
+        <activity android:name=".Edit" />
 
         <receiver
             android:name=".AlarmReceiver"
