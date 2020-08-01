@@ -11,7 +11,7 @@
         android:orientation="horizontal"
         android:paddingTop="4dp"
         android:paddingBottom="4dp"
-        android:background="@color/dark_blue">
+        android:background="@color/colorPrimary">
 
         <ImageButton
             android:layout_width="40dp"
@@ -22,16 +22,16 @@
             />
 
         <TextView
+            android:id="@+id/current_Date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_marginTop="20dp"
+            android:layout_weight="3"
+            android:gravity="center"
             android:text="CurrentDate"
-            android:id="@+id/current_Date"
-            android:textColor="@color/white"
-            android:textStyle="bold"
+            android:textColor="@color/black"
             android:textSize="18sp"
-            android:layout_weight="3"/>
+            android:textStyle="bold" />
 
         <ImageButton
             android:layout_width="40dp"
@@ -57,8 +57,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Sun"
-            android:background="#ff0000"
+            android:text="S"
+            android:textColor="@color/white"
+            android:background="@color/darkpink"
             android:layout_weight="1"
             android:textStyle="bold"
             />
@@ -73,8 +74,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Mon"
-            android:background="#ffa500"
+            android:text="M"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
             android:layout_weight="1"
             android:textStyle="bold"
             />
@@ -89,8 +91,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Tue"
-            android:background="#ffff00"
+            android:text="T"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
             android:layout_weight="1"
             android:textStyle="bold"
             />
@@ -105,8 +108,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Wed"
-            android:background="#008000"
+            android:text="W"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
             android:layout_weight="1"
             android:textStyle="bold"
             />
@@ -121,8 +125,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Thu"
-            android:background="#0000ff"
+            android:text="T"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
             android:layout_weight="1"
             android:textStyle="bold"
             />
@@ -137,8 +142,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Fri"
-            android:background="#4b0082"
+            android:text="F"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
             android:layout_weight="1"
             android:textStyle="bold"
             />
@@ -153,8 +159,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Sat"
-            android:background="#ee82ee"
+            android:text="S"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
             android:layout_weight="1"
             android:textStyle="bold"
             />
@@ -162,10 +169,15 @@
 
     </LinearLayout>
 
-    <GridView
-        android:id="@+id/gridview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:numColumns="7" />
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="7"
+            />
+    </LinearLayout>
+
 
 </LinearLayout>

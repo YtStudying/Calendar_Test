@@ -56,12 +56,12 @@ public class GridAdapter extends ArrayAdapter {
 
         //Setting the colour of Current Selected Month and Setting Rest of the Months to another colour
         if(displayMonth == currentMonth && displayYear == currentYear){
-            view.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.purple));
+            view.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.white));
 
         }
         else
         {
-            view.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.colorPrimary));
+            view.setBackgroundColor(ContextCompat.getColor(getContext(), R.color.lightpurple));
         }
 
         //Setting the indication of number of events below the date shown in the calendar in the grid view
