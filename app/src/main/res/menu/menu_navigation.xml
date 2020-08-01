@@ -17,8 +17,8 @@
         android:icon="@drawable/ic_pin"/>
 
     <item
-        android:id="@+id/Settings"
-        android:title="Settings"
-        android:icon="@drawable/ic_settings"/>
+        android:id="@+id/Info"
+        android:title="Info"
+        android:icon="@drawable/ic_info"/>
 
 </menu>

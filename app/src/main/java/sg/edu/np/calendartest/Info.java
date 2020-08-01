@@ -6,23 +6,49 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class Pin extends AppCompatActivity {
+import java.util.Calendar;
 
-    BottomNavigationView bottomNavigationView;
+public class Info extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pin);
+        setContentView(R.layout.activity_info);
+
+        final Button AboutUs;
+
+        final Button HowToUse;
+
+        BottomNavigationView bottomNavigationView;
 
         //Finding the navigation bar through its ID
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        //Setting the Selected Item ID as Pin because it is on the Pin page
-        bottomNavigationView.setSelectedItemId(R.id.Pin);
+        //Setting the Selected Item ID as Settings because it is on the Pin page
+        bottomNavigationView.setSelectedItemId(R.id.Info);
+
+        AboutUs = findViewById(R.id.aboutus);
+
+        HowToUse = findViewById(R.id.howtouse);
+
+        AboutUs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),AboutUs.class));
+            }
+        });
+
+        HowToUse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),HowToUse.class));
+            }
+        });
 
         //The action where it determines which icon on the navigation bar is being clicked
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -43,16 +69,16 @@ public class Pin extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
 
-                    //If the Pin icon is being clicked,it will not have any changes
-                    // as it is already on the Pin page
+                    //If the Pin icon is being clicked,
+                    // it will start the activity in the Pin class
                     case R.id.Pin:
+                        startActivity(new Intent(getApplicationContext(),Pin.class));
+                        overridePendingTransition(0,0);
                         return true;
 
-                    //If the Info icon is being clicked,
-                    // it will start the activity in the Info class
+                    //If the Info icon is being clicked, it will not have any changes
+                    // as it is already on the Info Page
                     case R.id.Info:
-                        startActivity(new Intent(getApplicationContext(),Info.class));
-                        overridePendingTransition(0,0);
                         return true;
                 }
                 //otherwise it will return false

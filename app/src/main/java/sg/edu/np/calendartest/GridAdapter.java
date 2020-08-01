@@ -76,6 +76,7 @@ public class GridAdapter extends ArrayAdapter {
                     && displayYear == eventCalendar.get(Calendar.YEAR)){
                 arrayList.add(events.get(i).getEVENT());
                 EventNumber.setText(arrayList.size()+" Events");
+                EventNumber.setTextColor(Color.BLACK);
             }
 
         }
