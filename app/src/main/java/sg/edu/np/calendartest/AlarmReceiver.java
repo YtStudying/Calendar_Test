@@ -19,7 +19,7 @@ public class AlarmReceiver extends BroadcastReceiver {
         String event = intent.getStringExtra("event");
         String time = intent.getStringExtra("time");
         int notId = intent.getIntExtra("id",0);
-        Intent activityIntent = new Intent(context,MainActivity.class);
+        Intent activityIntent = new Intent(context,CalendarActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(context,0,activityIntent,PendingIntent.FLAG_ONE_SHOT);
 
         String channelId = "channel_id";

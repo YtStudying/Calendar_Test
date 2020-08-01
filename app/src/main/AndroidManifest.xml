@@ -12,7 +12,6 @@
         <activity android:name=".AboutUs"></activity>
         <activity android:name=".HowToUse" />
         <activity android:name=".Info" />
-        <activity android:name=".Notes" />
         <activity android:name=".Pin" />
         <activity
             android:name=".SplashScreen"
@@ -23,11 +22,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:theme="@style/AppTheme" />
+
         <activity android:name=".CalendarActivity" />
-        <activity android:name=".Register" />
+        <activity android:name=".note_activity"/>
+        <activity android:name=".AddNote"/>
+        <activity android:name=".Detail"/>
+        <activity android:name=".Edit"/>
 
         <receiver
             android:name=".AlarmReceiver"

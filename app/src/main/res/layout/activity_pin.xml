@@ -6,13 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".Pin">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pin"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        android:layout_centerInParent="true"/>
+    <com.hanks.passcodeview.PasscodeView
+        android:id="@+id/passCodeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_purple"
+        app:correctStateColor="@android:color/holo_green_light"
+        app:numberTextColor="@android:color/darker_gray"
+        app:passcodeViewType="set_passcode"
+        app:wrongStateColor="@android:color/holo_red_light" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"

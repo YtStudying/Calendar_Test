@@ -13,6 +13,8 @@ public class Pin extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
 
+    CustomCalendarView customCalendarView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +41,7 @@ public class Pin extends AppCompatActivity {
                     //If the Notes icon is being clicked,
                     // it will start the activity in the Notes class
                     case R.id.Notes:
-                        startActivity(new Intent(getApplicationContext(),Notes.class));
+                        startActivity(new Intent(getApplicationContext(),note_activity.class));
                         overridePendingTransition(0,0);
                         return true;
 
@@ -61,5 +63,8 @@ public class Pin extends AppCompatActivity {
                 return false;
             }
         });
+
+        customCalendarView = findViewById(R.id.custom_calendar_view);
+
     }
 }
