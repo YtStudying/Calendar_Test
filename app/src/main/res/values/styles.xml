@@ -17,4 +17,15 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="CustomTextView" parent="android:Widget.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">68dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/WHITE</item>
+        <item name="android:background">@color/BLACK</item>
+    </style>
+
 </resources>

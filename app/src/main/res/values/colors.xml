@@ -17,4 +17,16 @@
     <color name="login_form_details">#ccffffff</color>
     <color name="login_form_details_light">#1affffff</color>
     <color name="login_form_details_medium">#66ffffff</color>
+
+    <color name="BLACK">#000000</color>
+    <color name="WHITE">#FFFFFF</color>
+    <color name="GRAY">#D3D3D3</color>
+    <color name="ORANGE">#FFB732</color>
+
+    <color name="colorSecondaryDark">#002f6c</color>
+    <color name="colorSecondaryLite">#4f83cc</color>
+    <color name="colorTextonPrimary">#ffffff</color>
+    <color name="colorTextonSecondary">#ffffff</color>
+
+
 </resources>

@@ -59,7 +59,7 @@ public class note_activity extends AppCompatActivity{
                     //If the Pin icon is being clicked,
                     // it will start the activity in the Pin class
                     case R.id.Pin:
-                        startActivity(new Intent(getApplicationContext(),Pin.class));
+                        startActivity(new Intent(getApplicationContext(),Calculator.class));
                         overridePendingTransition(0,0);
                         return true;
 

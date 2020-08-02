@@ -1,11 +1,11 @@
 package sg.edu.np.calendartest;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -46,7 +46,7 @@ public class CalendarActivity extends AppCompatActivity {
                     //If the Pin icon is being clicked,
                     // it will start the activity in the Pin class
                     case R.id.Pin:
-                        startActivity(new Intent(getApplicationContext(),Pin.class));
+                        startActivity(new Intent(getApplicationContext(),Calculator.class));
                         overridePendingTransition(0,0);
                         return true;
 
