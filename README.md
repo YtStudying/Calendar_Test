@@ -47,13 +47,13 @@ Screenshots of Application:
 ![Alarm Off](MAD/Alarm_Off.png)
 
 7) Alarm Notification <br>
-![Alarm Notification](MAD/Alarm_Notfication.png)
+![Alarm Notification](MAD/Alarm_Notification.png)
 
 9) Note Taking <br>
-![Note Taking](MAD/Note_Taking.png)
+![Note Taking](MAD/Notes_Taking.png)
 
 9) Calculator <br>
-![Calculator](MAD/Calculator.png)
+![Calculator](MAD/Calculator_Page.png)
 
 10) Information <br>
 ![Info](MAD/Info.png)
@@ -64,7 +64,7 @@ Playstore Screenshots Submission (extra):
 ![Icon for 20 Planny](MAD/web_hi_res_512.png)
 
 2) Feature Graphic <br>
-![Feature Graphic](MAD/20 Planny-feature-graphic.png)
+![Feature Graphic](MAD/20-Planny-feature-graphic.png)
 
 Screenshots of Other Designs for Calender:
 
