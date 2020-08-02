@@ -383,5 +383,8 @@ public class Calculator extends AppCompatActivity {
         hasDot = false;
     }
 
-
+    @Override
+    public void finish() {
+        super.finish();
+    }
 }

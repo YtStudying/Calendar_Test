@@ -85,5 +85,11 @@ public class Info extends AppCompatActivity {
                 return false;
             }
         });
+
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
     }
 }

@@ -25,4 +25,9 @@ public class HowToUse extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void finish() {
+        super.finish();
+    }
 }

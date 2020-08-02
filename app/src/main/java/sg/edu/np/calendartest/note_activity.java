@@ -129,9 +129,12 @@ public class note_activity extends AppCompatActivity{
             displayList(getAllNotes);
         }
 
-
     }
 
+    @Override
+    public void finish() {
+        super.finish();
+    }
 }
 
 
