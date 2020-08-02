@@ -31,7 +31,7 @@ public class Calculator extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         //Setting the Selected Item ID as Pin because it is on the Pin page
-        bottomNavigationView.setSelectedItemId(R.id.Pin);
+        bottomNavigationView.setSelectedItemId(R.id.Calculator);
 
         //The action where it determines which icon on the navigation bar is being clicked
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -52,9 +52,9 @@ public class Calculator extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
 
-                    //If the Pin icon is being clicked,it will not have any changes
-                    // as it is already on the Pin page
-                    case R.id.Pin:
+                    //If the Calculator icon is being clicked,it will not have any changes
+                    // as it is already on the Calculator page
+                    case R.id.Calculator:
                         return true;
 
                     //If the Info icon is being clicked,

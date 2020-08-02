@@ -67,9 +67,9 @@ public class Info extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
 
-                    //If the Pin icon is being clicked,
-                    // it will start the activity in the Pin class
-                    case R.id.Pin:
+                    //If the Calculator icon is being clicked,
+                    // it will start the activity in the Calculator class
+                    case R.id.Calculator:
                         startActivity(new Intent(getApplicationContext(),Calculator.class));
                         overridePendingTransition(0,0);
                         return true;

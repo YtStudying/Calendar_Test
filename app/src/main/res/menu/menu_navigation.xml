@@ -12,9 +12,9 @@
         android:icon="@drawable/ic_note"/>
 
     <item
-        android:id="@+id/Pin"
-        android:title="Pin"
-        android:icon="@drawable/ic_pin"/>
+        android:id="@+id/Calculator"
+        android:title="Calculator"
+        android:icon="@drawable/ic_calculator"/>
 
     <item
         android:id="@+id/Info"
