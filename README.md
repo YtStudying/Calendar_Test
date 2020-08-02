@@ -19,7 +19,7 @@ Roles and Contribution:
 
 Future Plan/Upgrades:
 1) Headlines (News/Weather) 
-2) Notifications/Alarm 
+2) Notifications/Alarm (Done)
 3) Different styles for personalization (Male/Female) 
 4) Daily Tips/Hacks (Motivational Quotes) 
 5) Picture/Video Recording  
@@ -28,20 +28,43 @@ Future Plan/Upgrades:
 8) Birthday Reminders (Sync Contact)
 
 Screenshots of Application:
-1) Login Page <br>
-![Login Page](MAD/Login.png)
+1) Splashscreen <br>
+![Splashscreen](MAD/splashscreen2.png)
 
-2) Registration Page <br>
-![Registration Page](MAD/Registration.png)
+2) Home Page/Main Page <br>
+![Main/Home Page](MAD/Main_Home(updated).png)
 
-3) Home Page/Main Page <br>
-![Main/Home Page](MAD/Main_Home.png)
+3) Adding Event <br>
+![Adding of Event](MAD/Adding_Event(updated).png)
 
-4) Adding Event <br>
-![Adding of Event](MAD/Adding_Event.png)
+4) Time Picker <br>
+![Time Picker for Event](MAD/Time_Picker.png)
 
 5) Viewing/Deleting Event <br>
-![Viewing/Deleting of Event](MAD/Viewing_Deleting.png)
+![Viewing/Deleting of Event](MAD/Viewing_Deleting(updated).png)
+
+6) Alarm <br>
+![Alarm Off](MAD/Alarm_Off.png)
+
+7) Alarm Notification <br>
+![Alarm Notification](MAD/Alarm_Notfication.png)
+
+9) Note Taking <br>
+![Note Taking](MAD/Note_Taking.png)
+
+9) Calculator <br>
+![Calculator](MAD/Calculator.png)
+
+10) Information <br>
+![Info](MAD/Info.png)
+
+Playstore Screenshots Submission (extra):
+
+1) Icon for App <br>
+![Icon for 20 Planny](MAD/web_hi_res_512.png)
+
+2) Feature Graphic <br>
+![Feature Graphic](MAD/20 Planny-feature-graphic.png)
 
 Screenshots of Other Designs for Calender:
 
