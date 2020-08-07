@@ -8,10 +8,11 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="213dp"
-        android:layout_height="66dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="About Us"
+        android:textAlignment="center"
         android:textSize="50dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,7 +21,7 @@
 
     <Button
         android:id="@+id/back"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="Back"
@@ -31,10 +32,10 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="379dp"
-        android:layout_height="147dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="This is our Daily Planner App called Planny and it allows users to add and delete events for organization of their schedules and it is also ads free."
-        android:textSize="25dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
@@ -44,42 +45,40 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="295dp"
-        android:layout_height="66dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Lee Yoon Teng, Main Programmer/Designer"
-        android:textSize="25dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.862"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.185" />
+        app:layout_constraintVertical_bias="0.292" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="282dp"
-        android:layout_height="66dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Loke Hou Ming, Sub Porgrammer/Designer"
-        android:textSize="25dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.782"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.352" />
+        app:layout_constraintVertical_bias="0.489" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="241dp"
-        android:layout_height="63dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="James Yu Renxiang, Main Designer"
-        android:textSize="25dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.514" />
+        app:layout_constraintVertical_bias="0.687" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -87,11 +86,12 @@
         android:layout_height="70dp"
         app:layout_constraintBottom_toBottomOf="@+id/back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.18"
-        app:srcCompat="@drawable/ic_face" />
+        app:layout_constraintVertical_bias="0.171"
+        app:srcCompat="@drawable/ic_face"
+        tools:ignore="VectorDrawableCompat" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -99,11 +99,12 @@
         android:layout_height="70dp"
         app:layout_constraintBottom_toBottomOf="@+id/back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.354"
-        app:srcCompat="@drawable/ic_face" />
+        app:layout_constraintVertical_bias="0.382"
+        app:srcCompat="@drawable/ic_face"
+        tools:ignore="VectorDrawableCompat" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -111,9 +112,10 @@
         android:layout_height="70dp"
         app:layout_constraintBottom_toBottomOf="@+id/back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52"
-        app:srcCompat="@drawable/ic_face" />
+        app:layout_constraintVertical_bias="0.596"
+        app:srcCompat="@drawable/ic_face"
+        tools:ignore="VectorDrawableCompat" />
 </androidx.constraintlayout.widget.ConstraintLayout>
