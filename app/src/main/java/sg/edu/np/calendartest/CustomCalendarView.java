@@ -144,7 +144,7 @@ public class CustomCalendarView extends LinearLayout {
                     @Override
                     public void onClick(View v) {
 
-                        //Alarm Notification Settings
+                        //Alarm Notification Settings (Checked/Unchecked)
                         if (alarmMe.isChecked()){
                             SaveEvent(EventName.getText().toString(),EventTime.getText().toString(),date,month,year,"on");
                             SetUpCalendar();

@@ -20,14 +20,14 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void run() {
 
-                //The following code will execute after the 5 seconds.
+                //The following code will execute after the 3 seconds.
                 try {
 
                     //Go to next page i.e, start the next activity.
                     Intent intent = new Intent(getApplicationContext(), CalendarActivity.class);
                     startActivity(intent);
 
-                    //Let's Finish Splash Activity since we don't want to show this when user press back button.
+                    //Finish Splash Activity since we don't want to show this when user press back button.
                     finish();
                 } catch (Exception ignored) {
                     ignored.printStackTrace();

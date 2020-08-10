@@ -32,6 +32,7 @@ public class AlarmReceiver extends BroadcastReceiver {
             notificationManager.createNotificationChannel(channel);
         }
 
+        //Setting how the notification will act on the notification bar
         Notification notification = new NotificationCompat.Builder(context,channelId)
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))
