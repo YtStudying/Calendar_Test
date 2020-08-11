@@ -38,7 +38,7 @@ Screenshots of Application:
 ![Adding of Event](MAD/Adding_Event(updated).png)
 
 4) Time Picker <br>
-![Time Picker for Event](MAD/Time_Picker.png)
+![Time Picker for Event](MAD/.png)
 
 5) Viewing/Deleting Event <br>
 ![Viewing/Deleting of Event](MAD/Viewing_Deleting(updated).png)
