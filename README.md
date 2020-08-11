@@ -1,4 +1,4 @@
-# MAD Assignment Checkpoint 1
+# MAD Assignment (Final)
 
 Application Name: 
 
