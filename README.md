@@ -13,9 +13,9 @@ Introduction to the Application:
 Our Daily Planner App allows users to add and delete events for organization of their schedules and it is also ads free.
 
 Roles and Contribution:
-1) Yoon Teng - Main Programmer (Created the database, Adding/Deleting/Viewing of Events)
-2) Anderson - Sub Programmer/Designer (Created the Login and Registration Page and did the UI for both pages)
-3) James - Main Desginer (Did the UI of the whole App) 
+1) Yoon Teng - Main Programmer
+2) Anderson - Sub Programmer/Designer 
+3) James - Main Desginer
 
 Future Plan/Upgrades:
 1) Headlines (News/Weather) 
